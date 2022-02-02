@@ -20,7 +20,7 @@ trample-message: "&4[FarmEss] &cYou cannot do that here!"
 title-when-trampled: false
 
 # Set the title/subtitle when a player tramples farmland (use '&' for color codes)
-# Set title to color code for no title, example: trample-titlle: "&f"
+# Set title to color code for no title, example: trample-title: "&f"
 # Leave blank for no subtitle
 trample-title: "&4[FarmEss]"
 trample-subtitle: "&cYou cannot do that here!"
@@ -33,4 +33,4 @@ action-bar-when-trampled: false
 trample-action-bar: "&4[&l!&4] &cYou cannot do that here! &4[&l!&4]"
 
 # Want to suggest more features? Make an issue on the GitHub!
-#
+# https://github.com/hotpocket184/FarmEss/issues
