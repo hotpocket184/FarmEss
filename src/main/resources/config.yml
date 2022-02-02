@@ -1,0 +1,36 @@
+#  ███████╗ █████╗ ██████╗ ███╗   ███╗███████╗ ██████╗ ██████╗
+#  ██╔════╝██╔══██╗██╔══██╗████╗ ████║██╔════╝██╔════╝██╔════╝
+#  █████╗  ███████║██████╔╝██╔████╔██║█████╗  ╚█████╗ ╚█████╗
+#  ██╔══╝  ██╔══██║██╔══██╗██║╚██╔╝██║██╔══╝   ╚═══██╗ ╚═══██╗
+#  ██║     ██║  ██║██║  ██║██║ ╚═╝ ██║███████╗██████╔╝██████╔╝
+#  ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚═════╝ ╚═════╝
+
+# Adds essential farm features for your server!
+
+# config.yml (Do not edit if you don't know what you're doing!)
+
+# Send a message when a player tramples farmland
+message-when-trampled: true
+
+# Set the message when a player tramples farmland (use '&' for color codes)
+# Leave blank for no message
+trample-message: "&4[FarmEss] &cYou cannot do that here!"
+
+# Send a title/subtitle when a player tramples farmland
+title-when-trampled: false
+
+# Set the title/subtitle when a player tramples farmland (use '&' for color codes)
+# Set title to color code for no title, example: trample-titlle: "&f"
+# Leave blank for no subtitle
+trample-title: "&4[FarmEss]"
+trample-subtitle: "&cYou cannot do that here!"
+
+# Send an action bar when a player tramples farmland
+action-bar-when-trampled: false
+
+# Set the action bar when a player tramples farmland (use '&' for color codes)
+# Leave blank for no action bar
+trample-action-bar: "&4[&l!&4] &cYou cannot do that here! &4[&l!&4]"
+
+# Want to suggest more features? Make an issue on the GitHub!
+#

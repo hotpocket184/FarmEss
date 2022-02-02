@@ -1,0 +1,8 @@
+name: FarmEss
+version: '${project.version}'
+main: me.hotpocket.plugin.FarmEss
+authors: [ hotpocket184 ]
+description: Essential farming plugin.
+commands:
+  farmess-reload:
+    description: Reload the FarmEss config file.
