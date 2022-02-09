@@ -48,6 +48,6 @@ public final class FarmEss extends JavaPlugin {
                 }
             }
         }
-        return true;
+        return false;
     }
 }
