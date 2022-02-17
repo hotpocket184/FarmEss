@@ -13,24 +13,28 @@ public class TrampleEvent implements Listener {
 
     @EventHandler
     private void onTrample(PlayerInteractEvent event) {
-        if (event.getClickedBlock().getType().equals(Material.SOIL) && event.getAction().equals(Action.PHYSICAL)) {
-            event.setCancelled(true);
-            if (ConfigUtil.getBoolean("message-when-trampled")) {
-                MessageUtil.playerMessage(event.getPlayer(), ConfigUtil.getString("trample-message"));
-            }
-            if (ConfigUtil.getBoolean("title-when-trampled")) {
-                MessageUtil.playerTitle(event.getPlayer(), ConfigUtil.getString("trample-title"), ConfigUtil.getString("trample-subtitle"), 0, 30, 5);
-            }
-            if (ConfigUtil.getBoolean("action-bar-when-trampled")) {
-                MessageUtil.playerActionBar(event.getPlayer(), ConfigUtil.getString("trample-action-bar"));
+        if (event.getClickedBlock() != null) {
+            if (event.getClickedBlock().getType().equals(Material.SOIL) && event.getAction().equals(Action.PHYSICAL)) {
+                event.setCancelled(true);
+                if (ConfigUtil.getBoolean("message-when-trampled")) {
+                    MessageUtil.playerMessage(event.getPlayer(), ConfigUtil.getString("trample-message"));
+                }
+                if (ConfigUtil.getBoolean("title-when-trampled")) {
+                    MessageUtil.playerTitle(event.getPlayer(), ConfigUtil.getString("trample-title"), ConfigUtil.getString("trample-subtitle"), 0, 30, 5);
+                }
+                if (ConfigUtil.getBoolean("action-bar-when-trampled")) {
+                    MessageUtil.playerActionBar(event.getPlayer(), ConfigUtil.getString("trample-action-bar"));
+                }
             }
         }
     }
 
     @EventHandler
     private void onMobTrample(EntityInteractEvent event) {
-        if (event.getBlock().getType().equals(Material.SOIL)) {
-            event.setCancelled(true);
+        if (event.getBlock() != null) {
+            if (event.getBlock().getType().equals(Material.SOIL)) {
+                event.setCancelled(true);
+            }
         }
     }
 }
